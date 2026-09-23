@@ -1,3 +1,0 @@
-FROM alpine
-RUN apk add --no-cache netcat-openbsd
-CMD echo -e "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 21\r\n\r\nProduct Service Ready" | nc -l -p 8082
