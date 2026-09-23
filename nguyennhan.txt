@@ -1,0 +1,1 @@
+Trong Nginx cấu hình file nginx.conf, từ khóa localhost trỏ về chính container nginx_proxy. Do user_service và product_service chạy ở các container độc lập khác nhau, Nginx không thể tìm thấy ứng dụng ở cổng 8081/8082 trên chính nó, dẫn đến lỗi kết nối và trả về 502 Bad Gateway
